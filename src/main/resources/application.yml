@@ -1,7 +1,7 @@
 # mysql 설정
 spring:
   datasource:
-    url:  jdbc:mysql://localhost:3306/jpa_ex?characterEncoding=utf8
+    url:  jdbc:mysql://localhost:3306/board?characterEncoding=utf8
     username: root
     password: 1234
     driver-class-name:  com.mysql.cj.jdbc.Driver
@@ -9,7 +9,7 @@ spring:
 # hibernate 설정
 jpa:
   hibernate:
-    ddl-auto: create
+    ddl-auto: none
   show-sql: true
   properties:
     hibernate:
