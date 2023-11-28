@@ -5,6 +5,7 @@ import com.example.reactspring.dto.SignUpDto;
 import com.example.reactspring.dto.SignUpResponseDto;
 import org.springframework.web.bind.annotation.*;
 
+@CrossOrigin(originPatterns = "http://localhost:3000")
 @RestController
 @RequestMapping("/api/auth")
 public class AuthController {
