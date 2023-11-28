@@ -1,9 +1,11 @@
 package com.example.reactspring.controller;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+@CrossOrigin(originPatterns = "http://localhost:3000") //어떠한 패턴에 대해서 허용해 주겠다
 @RestController // @RestController - 해당 클래스를 Controller 레이어로 Rest한 형태로 인색하게 하도록 함
 // Rest한 형태 - 우리가 Request, Response라 하는 것은 이제 Response로 html을 반환하는게 일반 적인데,
 // API를 태워서 데이터만 넘겨주는 형태로 할 때에는 @Controller + @ResponseBody로 지정해야 한다.
